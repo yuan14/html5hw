@@ -147,7 +147,7 @@ nav {
 	top: 0;	
 }
 	 
-marquee {
+#marquee {
 	background-image: url("../img/chicago_main.jpg");
 	background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -245,9 +245,8 @@ aside a {
 
 #features figure:hover {
   background: grey;
-  transform: translate (50px,50px) rotate (1080 deg);
-  transition: transform 2s ease-in-out, 
-    background 1s linear;
+  transform: scale(1.5) perspective(500px);
+  transition: transform 2s ease-in-out, background 1s linear;
   transition-delay: 0s, 2s;
 }
 
