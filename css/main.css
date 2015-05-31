@@ -139,6 +139,14 @@ body {
 	padding: 0;
 }
 
+nav {
+	width: 100%;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.85);
+	position: fixed;
+	top: 0;	
+}
+	 
 marquee {
 	background-image: url("../img/chicago_main.jpg");
 	background-size: 100% 100%;
@@ -204,16 +212,6 @@ aside a {
 	margin-bottom: 200px;
 }
 
-.no-touch #marquee a:hover {
-	color: #000;
-	border: 1px solid #696963;
-	background-image: linear-gradient(bottom, #ED7F58, #C54327);
-	text-decoration: none;
-	padding: 10px 35px;
-	border-radius: 5px;
-	font-weight: bold;
-}
-
 #features {
 	background: #ECECEC;
 	border-radius: 10px 10px 0 0;
@@ -246,7 +244,11 @@ aside a {
 }
 
 #features figure:hover {
-	transform: translate(300px, 300px);
+  background: grey;
+  transform: translate(0px, -20px) translate(20px, 20px) translate(-20px, 20px) translate(-20px, 20px) translate(20px,0px) persective(500px);
+  transition: transform 2s ease-in-out, 
+    background 1s linear;
+  transition-delay: 0s, 2s;
 }
 
 #features article {
@@ -297,6 +299,10 @@ aside a {
 	font: bold 12px/25px Arial, Helvetica;
 	text-decoration: none;
 	text-shadow: 0 1px 0 #CCC;
+}
+
+#menu li:nth-child(3) a{
+	color: red
 }
 
 .no-touch #menu li:nth-child(n+2):hover{
