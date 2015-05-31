@@ -245,7 +245,7 @@ aside a {
 
 #features figure:hover {
   background: grey;
-  transform: translate(0px, -20px) translate(20px, 20px) translate(-20px, 20px) translate(-20px, 20px) translate(20px,0px) persective(500px);
+  transform: translate (50px,50px) rotate (1080 deg);
   transition: transform 2s ease-in-out, 
     background 1s linear;
   transition-delay: 0s, 2s;
